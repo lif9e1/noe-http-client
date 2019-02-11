@@ -13,8 +13,11 @@
   "author": "Shaohui Li <lishaohui+npm@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/request-promise": "^4.1.42",
     "typescript": "^3.3.3"
   },
   "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   }
 }
