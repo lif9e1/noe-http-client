@@ -1,0 +1,20 @@
+{
+  "name": "noe-http-client",
+  "version": "0.0.1",
+  "description": "Wrapper of request-promise so that HTTP will return code greater than 400 will not throw an exception, for the convinience of client integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Shaohui Li <lishaohui+npm@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+  }
+}
