@@ -1,7 +1,7 @@
 {
   "name": "noe-http-client",
   "version": "0.0.1",
-  "description": "Wrapper of request-promise so that HTTP will return code greater than 400 will not throw an exception, for the convinience of client integration",
+  "description": "Wrapper of request-promise without throwing exception in case statusCode greater than 400",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

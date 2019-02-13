@@ -1,5 +1,5 @@
 import * as rp from 'request-promise';
-import { HttpResult, Headers, HttpAgent } from './model/HttpResult';
+import { HttpResult, Headers } from './model/HttpResult';
 
 export const agent = {
   get: (url: string, headers?: Headers, json = true) => {
@@ -9,7 +9,7 @@ export const agent = {
         uri: url,
         headers: headers,
         json: json,
-        resolveWithFullResponse: true,
+        resolveWithFullResponse: true
       };
       let result = new HttpResult();
       try {
@@ -38,7 +38,7 @@ export const agent = {
         headers: headers,
         body: body,
         json: json,
-        resolveWithFullResponse: true,
+        resolveWithFullResponse: true
       };
       let result = new HttpResult();
       try {
@@ -67,7 +67,7 @@ export const agent = {
         headers: headers,
         body: body,
         json: true,
-        resolveWithFullResponse: true,
+        resolveWithFullResponse: true
       };
       let result = new HttpResult();
       try {
@@ -95,7 +95,7 @@ export const agent = {
         uri: url,
         headers: headers,
         json: true,
-        resolveWithFullResponse: true,
+        resolveWithFullResponse: true
       };
       let result = new HttpResult();
       try {
@@ -115,5 +115,5 @@ export const agent = {
         }
       }
     });
-  },
+  }
 };

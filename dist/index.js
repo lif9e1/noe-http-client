@@ -51,7 +51,7 @@ exports.agent = {
                             uri: url,
                             headers: headers,
                             json: json,
-                            resolveWithFullResponse: true,
+                            resolveWithFullResponse: true
                         };
                         result = new HttpResult_1.HttpResult();
                         _a.label = 1;
@@ -95,7 +95,7 @@ exports.agent = {
                             headers: headers,
                             body: body,
                             json: json,
-                            resolveWithFullResponse: true,
+                            resolveWithFullResponse: true
                         };
                         result = new HttpResult_1.HttpResult();
                         _a.label = 1;
@@ -138,7 +138,7 @@ exports.agent = {
                             headers: headers,
                             body: body,
                             json: true,
-                            resolveWithFullResponse: true,
+                            resolveWithFullResponse: true
                         };
                         result = new HttpResult_1.HttpResult();
                         _a.label = 1;
@@ -180,7 +180,7 @@ exports.agent = {
                             uri: url,
                             headers: headers,
                             json: true,
-                            resolveWithFullResponse: true,
+                            resolveWithFullResponse: true
                         };
                         result = new HttpResult_1.HttpResult();
                         _a.label = 1;
@@ -210,5 +210,5 @@ exports.agent = {
                 }
             });
         }); });
-    },
+    }
 };
