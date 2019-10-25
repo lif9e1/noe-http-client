@@ -6,11 +6,11 @@ This is a simple wrapper for module 'Request-Promise'. It suppresses the excepti
 
 ## When you need this module?
 
-Actually you don't need this module. With modules like "Request-Promise", you are able to make whatever HTTP-calls you like. The only downside of this approach is that you need to handle exceptions in case the return code is  >= 400. While 401 or 403 makes sense for an exception, handle 404 is absolutely annoying, because semantically you can't say that it is an exception and I really hate to handle the exception if nothing is found in the database. 
+Actually you don't need this module. With modules like "Request-Promise", you are able to make whatever HTTP-calls you like. The only downside of this approach is that you need to handle exceptions in case the return code is >= 400. While 401 or 403 makes sense for an exception, handle 404 is absolutely annoying, because semantically you can't say that it is an exception and I really hate to handle the exception if nothing is found in the database.
 
+Another situation where I need a "no execption HTTP client" is to make HTTP calls within array.map, at latest when you call Promise.all() you'd better pray that every statusCode of the HTTP call is less than 400. You may argue that there are frameworks like "Q" which can help with this, but it is another dependency, isn't it?
 
-
-Another situation where I need a "no execption HTTP client"     is to make HTTP calls within array.map, at latest when you call Promise.all() you will pray that every statusCode of the HTTP call is less than 400. You may argue that there are frameworks like "Q" which can help with  this, but it is another dependency, isn't it?
+This simple wrapper has been packaged als npm package and can be installed per command `npm i noe-http-client`
 
 ## Installation
 
@@ -21,10 +21,12 @@ npm install noe-http-client
 ## Usage and Data Structure
 
 In its simplest case, you can use the module like following:
+
 ```js
-import { agent } from 'noe-http-client'
-agent.get("https://www.google.com/test1234").then(res=>console.log(res))
+import { agent } from 'noe-http-client';
+agent.get('https://www.google.com/test1234').then(res => console.log(res));
 ```
+
 The result will look like this:
 
 ```json
@@ -46,7 +48,4 @@ Please check the source code for more details description of the usage.
 
 ## Source Code
 
-Please note that the current version of the module is 0.0.1, i.e. it is just the beginning. Source code can be found at Github. In case you have any suggestions, please don't hesitate to contact me.
-
-
-
+Source code can be found at `https://github.com/lif9e1/noe-http-client`. Feel free to fork and contribute!
