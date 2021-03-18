@@ -1,6 +1,6 @@
 {
   "name": "noe-http-client",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Wrapper of request-promise without throwing exception in case statusCode greater than 400",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,5 +19,9 @@
   "dependencies": {
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lif9e1/noe-http-client"
   }
 }
